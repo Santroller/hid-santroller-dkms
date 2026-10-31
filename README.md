@@ -41,6 +41,7 @@ sudo rm -rf /usr/src/hid-santroller-0.1.0
 
 ```sh
 make
+sudo modprobe -a ff-memless led-class-multicolor   # insmod doesn't load dependencies
 sudo insmod hid-santroller.ko
 ```
 
